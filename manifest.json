@@ -13,7 +13,9 @@
     "permissions":[
       "tabs","activeTab","storage"
     ],
-    
+    "background":{
+      "scripts":["bg.js"]
+    },
    
     "browser_action": {
       "default_popup":"popup.html",

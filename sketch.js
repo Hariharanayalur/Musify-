@@ -26,9 +26,8 @@ function draw() {
     songs.addEventListener('change', function () {
       files = songs.files;
       len = files.length;
-      if (len) {
-        next(_next);
-      }
+      chrome.runtime.sendMessage(files);
+      
     });
     myAudio.addEventListener("ended", function () {
       _next += 1;
